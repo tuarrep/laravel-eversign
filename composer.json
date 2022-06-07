@@ -17,8 +17,10 @@
     ],
     "require": {
         "php": "^8.1",
-        "spatie/laravel-package-tools": "^1.9.2",
-        "illuminate/contracts": "^9.0"
+        "eversign/eversign-php-sdk": "^1.25",
+        "illuminate/contracts": "^9",
+        "illuminate/support": "^9",
+        "spatie/laravel-package-tools": "^1.9.2"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^3.8",
@@ -35,13 +37,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Pinpon\\LaravelEversign\\": "src",
-            "Pinpon\\LaravelEversign\\Database\\Factories\\": "database/factories"
+            "Pinpon\\Eversign\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Pinpon\\LaravelEversign\\Tests\\": "tests"
+            "Pinpon\\Eversign\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -60,10 +61,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Pinpon\\LaravelEversign\\LaravelEversignServiceProvider"
+                "Pinpon\\Eversign\\EversignServiceProvider"
             ],
             "aliases": {
-                "LaravelEversign": "Pinpon\\LaravelEversign\\Facades\\LaravelEversign"
+                "Eversign": "Pinpon\\Eversign\\Facades\\Eversign"
             }
         }
     },

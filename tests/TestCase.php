@@ -1,10 +1,10 @@
 <?php
 
-namespace Pinpon\LaravelEversign\Tests;
+namespace Pinpon\Eversign\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Pinpon\LaravelEversign\LaravelEversignServiceProvider;
+use Pinpon\Eversign\EversignServiceProvider;
 
 class TestCase extends Orchestra
 {
@@ -13,14 +13,14 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'Pinpon\\LaravelEversign\\Database\\Factories\\'.class_basename($modelName).'Factory'
+            fn (string $modelName) => 'Pinpon\\Eversign\\Database\\Factories\\'.class_basename($modelName).'Factory'
         );
     }
 
     protected function getPackageProviders($app)
     {
         return [
-            LaravelEversignServiceProvider::class,
+            EversignServiceProvider::class,
         ];
     }
 
