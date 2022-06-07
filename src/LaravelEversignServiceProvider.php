@@ -2,9 +2,9 @@
 
 namespace Pinpon\LaravelEversign;
 
+use Pinpon\LaravelEversign\Commands\LaravelEversignCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Pinpon\LaravelEversign\Commands\LaravelEversignCommand;
 
 class LaravelEversignServiceProvider extends PackageServiceProvider
 {
