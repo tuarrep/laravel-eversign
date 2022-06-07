@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Pinpon\LaravelEversign\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class LaravelEversignCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'laravel-eversign';
 
     public $description = 'My command';
 
