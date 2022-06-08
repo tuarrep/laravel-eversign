@@ -2,7 +2,6 @@
 
 namespace Pinpon\Eversign;
 
-use Pinpon\Eversign\Facades\Eversign as EversignFacade;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
